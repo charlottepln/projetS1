@@ -1,15 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>EcOnline : Comment sauver la planète ?</title>
+    <link rel="stylesheet" href="./css/lib/normalize.css">
+    <link rel="stylesheet" href="./css/mescss/typography.css">
+    <link rel="stylesheet" href="./css/mescss/menu.css">
+    <link rel="stylesheet" href="css/mescss/mise-en-page-article.css">
 </head>
 <body>
 <header>
-    <img src="./img/accueil/logo.svg" alt="Logo EcOnline">
-    <h1>EcOnline</h1>
+    <img src="./img/accueil/logo.svg" alt="">
+    <h1 class="titre">EcOnline</h1>
+    <div class="nav-toggle">
+        <div class="nav-toggle-bar" onclick="document.documentElement.classList.toggle('menu-open')"></div>
+    </div>
     <nav class="menu">
+        <h1 class="titre">EcOnline</h1>
         <ul>
+            <li><a href="index.html">Accueil</a></li>
             <li><a href="how_to_sell_drugs_online_fast.html">How to sell drugs online fast: en quoi ça pollue?</a></li>
             <li><a href="la_pollution_numerique.html">La pollution numérique qu'est ce que c'est?</a></li>
             <li><a href="comment_sauver_la_planete.html">Comment sauver la planète?</a></li>
@@ -20,95 +32,162 @@
 </header>
 
 <article>
-    <div>
+    <div class="intro-art">
         <h1>Comment sauver la planète ?</h1>
-        <p>Maintenant que tu es averti de la pollution numérique, il ne te reste plus qu’une chose à faire : agir. Evidemment tu ne peux pas  faire changer les autres à toi tout seul. Pour y arriver, il faut bien sur que les géants de l’industrie agissent, mais toi aussi. Si chacun adopte les bons gestes à son échelle, on peut sauver la planète.</p>
+        <p>Maintenant que tu es averti de la pollution numérique, il ne te reste plus qu’une chose à faire : agir.
+            Evidemment tu ne peux pas faire changer les autres à toi tout seul. Pour y arriver, il faut bien sur que les
+            géants de l’industrie agissent, mais toi aussi. Si chacun adopte les bons gestes à son échelle, on peut
+            sauver la planète.</p>
         <figure>
-            <img src="./img/article_solutions/illustration_ecologie_numerique.jpeg" alt="Illustration écologie numérique, Pinterest.com">
+            <img src="./img/article_solutions/illustration_ecologie_numerique.jpeg"
+                 alt="Illustration écologie numérique, Pinterest.com">
             <figcaption>Illustration écologie numérique, Pinterest.com</figcaption>
         </figure>
     </div>
 
-    <div>
+    <div class="sous-titre">
         <h2>Comment agissent les géants ?</h2>
-        <p>Les géants Google, Apple, Facebook, Amazon et Microsoft, plus souvent appelés GAFAM, sont les plus gros pollueurs du secteur numérique. </p>
-        <p>Pour remédier à cela, ils visent l’empreinte 0 d’ici 2030. Ces entreprises ont prévu de passer à l’énergie verte à 100% pour alimenter leurs data centers, leurs bureaux mais également leurs usines de production.</p>
-        <p> Mais ce n’est pas tout. Il existe aussi des méthodes pour réduire la consommation d’énergie d’un data center. Le free cooling par exemple consiste à refroidir les data center en utilisant l’air extérieur plutôt que la clim. Pour que cela soit encore plus efficace, on peut déplacer les data centers vers des endroits du globe ou la température est plus basse, comme l’Islande ou l’Alaska. Et même les mettre directement dans l’eau comme l’a tenté Microsoft au large de l’Ecosse.</p>
-        <figure>
-            <img src="./img/article_solutions/data_center_sous_l_eau_microsoft.jpg" alt="Data center de Microsoft avant immersion, News.microsoft.com">
-            <figcaption>Data center de Microsoft avant immersion, News.microsoft.com</figcaption>
-        </figure>
+        <p>Les géants Google, Apple, Facebook, Amazon et Microsoft, plus souvent appelés GAFAM, sont les plus gros
+            pollueurs du secteur numérique. </p>
+        <p>Pour remédier à cela, ils visent l’empreinte 0 d’ici 2030. Ces entreprises ont prévu de passer à l’énergie
+            verte à 100% pour alimenter leurs data centers, leurs bureaux mais également leurs usines de production.</p>
+        <p> Mais ce n’est pas tout. Il existe aussi des méthodes pour réduire la consommation d’énergie d’un data
+            center. Le free cooling par exemple consiste à refroidir les data center en utilisant l’air extérieur plutôt
+            que la clim. Pour que cela soit encore plus efficace, on peut déplacer les data centers vers des endroits du
+            globe ou la température est plus basse, comme l’Islande ou l’Alaska. Et même les mettre directement dans
+            l’eau comme l’a tenté
+            <a href="https://www.futura-sciences.com/tech/actualites/informatique-microsoft-experience-data-center-sous-eau-reussite-totale-61458/">Microsoft
+                au large de l’Ecosse</a>.</p>
+        <div class="images">
+            <figure>
+                <img src="./img/article_solutions/data_center_sous_l_eau_microsoft.jpg"
+                     alt="Data center de Microsoft avant immersion, News.microsoft.com">
+                <figcaption>Data center de Microsoft avant immersion, News.microsoft.com</figcaption>
+            </figure>
+        </div>
     </div>
 
-    <div>
+    <div class="sous-titre">
         <h2>Les conseils de Grizzlead aux entreprises</h2>
 
         <h3>Passer à l’edge computing.</h3>
-        <p>Avant de lister les bénéfices de cette solution, revenons sur le concept de l’edge computing. Dans le fonctionnement actuel des entreprises, toutes les données générées par les machines sont envoyées et traitées dans les Datacenters distants. Problème : avec l’avènement de l’IoT, les objets connectés créent et envoient toujours plus de données. Au-delà des risques de sécurité, la centralisation des données demande un effort considérable pour les machines. Elle impacte aussi grandement l’empreinte écologique de la structure.</p>
-        <p>L’edge computing revient à centraliser et traiter les données localement à l’aide de minuscules Data Centers placés à proximité des objets connectés, voire, directement dessus. La donnée n’est plus traitée de manière centrale, mais en périphérie d’où le terme « edge ». Puisque l’edge computing traite la donnée localement, il peut trier les informations et n’envoyer que les éléments importants aux terminaux. Cette solution est donc plus écologique puisque les données parcourent une distance moins importante et qu’elles n’exigent pas de cycle de refroidissement par l’eau, contrairement aux Data Centers.</p>
-        <figure>
-            <img src="./img/article_solutions/illustration_edge_computing.jpg" alt="Edge computing, Lebigdata.fr">
-            <figcaption>Edge computing, Lebigdata.fr</figcaption>
-        </figure>
-
+        <p>Avant de lister les bénéfices de cette <strong>solution</strong>, revenons sur le concept de l’edge computing. Dans le
+            fonctionnement actuel des entreprises, toutes les <strong>données</strong> générées par les machines sont envoyées et
+            traitées dans les Datacenters distants. Problème : avec l’avènement de l’IoT, les objets connectés créent et
+            envoient toujours plus de <strong>données</strong>. Au-delà des risques de sécurité, la centralisation des données demande un
+            effort considérable pour les machines. Elle impacte aussi grandement l’empreinte écologique de la
+            structure.</p>
+        <p>L’edge computing revient à centraliser et traiter les <strong>données</strong> localement à l’aide de minuscules Data Centers
+            placés à proximité des objets connectés, voire, directement dessus. La donnée n’est plus traitée de manière
+            centrale, mais en périphérie d’où le terme « edge ». Puisque l’edge computing traite la donnée localement,
+            il peut trier les informations et n’envoyer que les éléments importants aux terminaux. Cette <strong>solution</strong> est
+            donc plus écologique puisque les <strong>données</strong> parcourent une distance moins importante et qu’elles n’exigent pas
+            de cycle de refroidissement par l’eau, contrairement aux Data Centers.</p>
+        <div class="images">
+            <figure>
+                <img src="./img/article_solutions/illustration_edge_computing.jpg" alt="Edge computing, Lebigdata.fr">
+                <figcaption>Edge computing, Lebigdata.fr</figcaption>
+            </figure>
+        </div>
         <h3>Axer son développement.</h3>
-        <p>Une structure qui souhaite changer à long terme peut se tourner vers une nouvelle discipline, le Green IT. Celle-ci rassemble 8 thématiques : les infrastructures informatiques, les Data Centers, les impressions, la gestion de la fin de vie, les achats, la gouvernance, les postes de travail et les applications.</p>
-        <p>À ce jour, moins d’un quart des entreprises françaises a intégré le Green IT à sa démarche. Seules 20 % des structures intègrent des critères de développement durable au sein de leurs appels d’offres IT et à peine 1/3 éco-conçoivent leurs logiciels.</p>
-        <figure>
-            <img src="./img/article_solutions/clavier_passer_au_vert.jpg" alt="Passer au vert, Webtheorie.com">
-            <figcaption>Passer au vert, Webtheorie.com</figcaption>
-        </figure>
+        <p>Une structure qui souhaite changer à long terme peut se tourner vers une nouvelle discipline, le Green IT.
+            Celle-ci rassemble 8 thématiques : les infrastructures informatiques, les Data Centers, les impressions, la
+            gestion de la fin de vie, les achats, la gouvernance, les postes de travail et les applications.</p>
+        <p>À ce jour, moins d’un quart des entreprises françaises a intégré le Green IT à sa démarche. Seules 20 % des
+            structures intègrent des critères de développement durable au sein de leurs appels d’offres IT et à peine
+            1/3 éco-conçoivent leurs logiciels.</p>
+        <div class="images">
+            <figure>
+                <img src="./img/article_solutions/clavier_passer_au_vert.jpg" alt="Passer au vert, Webtheorie.com">
+                <figcaption>Passer au vert, Webtheorie.com</figcaption>
+            </figure>
+        </div>
 
         <h3>Limiter les données.</h3>
-        <p>La start-up française Prophesee commercialise une solution de traitement d’image qui ne nécessite que très peu de données. La plupart des objets connectés du marché utilisent la vision artificielle. Ces caméras enregistrent des séquences d’images qui seront compilées puis traitées. Les données visuelles sont donc produites en masse puis soit supprimées, soit traitées.</p>
-        <p> La solution de Prophesee se base sur la vision humaine : plutôt que d’enregistrer chaque image, le cerveau nous transmet uniquement les informations liées aux mouvements. Lorsque ce fonctionnement est appliqué à une caméra, il s’agit d’une vision artificielle. Celle de Prophesee capture et transmet 1 000 fois moins de données qu’une caméra classique.</p>
-        <figure>
-            <img src="./img/article_solutions/PROPHESEE.jpg" alt="Prophesee, Prophesee.ai">
-            <figcaption>Prophesee, Prophesee.ai</figcaption>
-        </figure>
+        <p>La start-up française Prophesee commercialise une <strong>solution</strong> de traitement d’image qui ne nécessite que très
+            peu de <strong>données</strong>. La plupart des objets connectés du marché utilisent la vision artificielle. Ces caméras
+            enregistrent des séquences d’images qui seront compilées puis traitées. Les <strong>données</strong> visuelles sont donc
+            produites en masse puis soit supprimées, soit traitées.</p>
+        <p> La <strong>solution</strong> de Prophesee se base sur la vision humaine : plutôt que d’enregistrer chaque image, le cerveau
+            nous transmet uniquement les informations liées aux mouvements. Lorsque ce fonctionnement est appliqué à une
+            caméra, il s’agit d’une vision artificielle. Celle de Prophesee capture et transmet 1 000 fois moins de
+            <strong>données</strong> qu’une caméra classique.</p>
+        <div class="images">
+            <figure>
+                <img src="./img/article_solutions/PROPHESEE.jpg" alt="Prophesee, Prophesee.ai">
+                <figcaption>Prophesee, Prophesee.ai</figcaption>
+            </figure>
+        </div>
 
-       <h3>Repenser le stockage des données.</h3>
-        <p> Puisque la grosse problématique concerne l’entreposage, pourquoi ne pas concevoir de nouvelles manières de stocker? Des chercheurs de l’École Polytechnique de Zurich ont développé une solution révolutionnaire : utiliser l’ADN synthétique comme stockage. Les équipes ont jusqu’à présent réussi à stocker la totalité d’un album de Massive Attack sur des brins d’ADN. </p>
-        <p> Le fichier audio a été compressé pour ne peser que 15 Mo puis stocké sur 920000 brins d’ADN synthétique. Grâce à un encapsulage dans des billes de verres, l’album «ADNisé» devrait rester intact quelques centaines de milliers d’années. Les fondateurs de la start-up DNA script Sylvain Gariel et Thomas Ybert affirment même «On peut stocker toute l’information numérique produite par l’humanité dans un tube à essai». La solution ne serait-elle pas ici?</p>
+        <h3>Repenser le stockage des données.</h3>
+        <p> Puisque la grosse problématique concerne l’entreposage, pourquoi ne pas concevoir de nouvelles manières de
+            stocker? Des chercheurs de l’École Polytechnique de Zurich ont développé une <strong>solution</strong> révolutionnaire :
+            utiliser l’ADN synthétique comme stockage. Les équipes ont jusqu’à présent réussi à stocker la totalité d’un
+            album de Massive Attack sur des brins d’ADN. </p>
+        <p> Le fichier audio a été compressé pour ne peser que 15 Mo puis stocké sur 920000 brins d’ADN synthétique.
+            Grâce à un encapsulage dans des billes de verres, l’album «ADNisé» devrait rester intact quelques centaines
+            de milliers d’années. Les fondateurs de la start-up DNA script Sylvain Gariel et Thomas Ybert affirment même
+            «On peut stocker toute l’information numérique produite par l’humanité dans un tube à essai». La <strong>solution</strong> ne
+            serait-elle pas ici?</p>
         <p>Pour lire l'article complet, clique
             <a href="https://www.grizzlead.com/lincroyable-impact-de-la-pollution-numerique-et-les-bonnes-pratiques-a-adopter-tres-vite/">ici</a>
         </p>
-        <figure>
-            <img src="./img/article_solutions/stockage_données_adn.jpg" alt="Stockage de données et ADN, lejournal.cnrs.fr">
-            <figcaption>Stockage de données et ADN, lejournal.cnrs.fr</figcaption>
-        </figure>
+        <div class="images">
+            <figure>
+                <img src="./img/article_solutions/stockage_données_adn.jpg"
+                     alt="Stockage de données et ADN, lejournal.cnrs.fr">
+                <figcaption>Stockage de données et ADN, lejournal.cnrs.fr</figcaption>
+            </figure>
+        </div>
     </div>
 
-    <div>
+    <div class="sous-titre">
         <h2>Comment tu peux agir ?</h2>
-        <p>A ton échelle, il existe plusieurs bonnes pratiques à adopter. Commence d’abord par ta conduite sur internet et fait du tri. Commence par ta boite mail. Supprime tous les mails qui ne sont pas importants. Et Désabonne-toi de toutes les newsletters que tu n’ouvres jamais. Une fois que c’est fait, fais le tri dans ton cloud. Supprime tous les documents et photos dont tu n’as pas l’utilité. Garde y seulement ce dont tu as vraiment besoin. Tu peux aussi faire du tri dans les médias sur tes réseaux sociaux.</p>
-        <p> Au quotidien, tu peux aussi limiter tes recherches sur Internet. Avant de lancer la recherche, assure toi d’avoir tapé les bons mots clés pour être sûr de tomber directement sur l’information que tu recherches. Tu peux aussi utiliser des moteurs de recherches plus clean, comme Écosia qui plantera des arbres grâce à toi. </p>
+        <p>A ton échelle, il existe plusieurs bonnes pratiques à adopter. Commence d’abord par ta conduite sur internet
+            et fait du tri. Commence par ta boite mail. Supprime tous les mails qui ne sont pas importants. Et
+            Désabonne-toi de toutes les newsletters que tu n’ouvres jamais. Une fois que c’est fait, fais le tri dans
+            ton cloud. Supprime tous les documents et photos dont tu n’as pas l’utilité. Garde y seulement ce dont tu as
+            vraiment besoin. Tu peux aussi faire du tri dans les médias sur tes réseaux sociaux.</p>
+        <p> Au quotidien, tu peux aussi limiter tes recherches sur Internet. Avant de lancer la recherche, assure toi
+            d’avoir tapé les bons mots clés pour être sûr de tomber directement sur l’information que tu recherches. Tu
+            peux aussi utiliser des moteurs de recherches plus clean, comme Écosia qui plantera des arbres grâce à
+            toi. </p>
         <p>Désactiver la lecture automatique sur YouTube te permettra aussi de ne pas charger des vidéos pour rien. </p>
-        <p>Si tu réussis déjà à faire rentrer ça dans tes habitudes, c'est un bon commencement. Évidemment, il existe bien d'autres gestes, à toi de te renseigner si tu veux en faire plus ! La planète compte sur toi. </p>
-        <figure>
-            <img src="./img/article_solutions/illustration-solution-digitale.jpg" alt="Illustration solution digitale,  econom.com">
-            <figcaption>Illustration solution digitale,  econom.com</figcaption>
-        </figure>
+        <p>Si tu réussis déjà à faire rentrer ça dans tes habitudes, c'est un bon commencement. Évidemment, il existe
+            bien d'autres gestes, à toi de te renseigner si tu veux en faire plus ! La planète compte sur toi. </p>
+        <div class="images">
+            <figure>
+                <img src="./img/article_solutions/illustration-solution-digitale.jpg"
+                     alt="Illustration solution digitale,  econom.com">
+                <figcaption>Illustration solution digitale, econom.com</figcaption>
+            </figure>
+        </div>
     </div>
 
-    <div>
+    <div class="outro">
         <p>Si tu as envie d'en savoir plus n'hésite pas à aller jeter un œil dans la section autres projets.</p>
-        <button><a href="autres_projets.html"></a></button>
+        <div class="bouton">
+            <p>
+                <a href="autres_projets.html" class="bouton">En savoir plus</a>
+            </p>
+        </div>
     </div>
 </article>
 
-    <footer>
-        <p>Charlotte Poulain C1</p>
-        <address>
-            <a href="a_propos_et_contact.html">charlotte.poulain@etu.univ-fcomte.fr</a>
-            <p>Projet réalisé dans le cadre d'un exercice pédagogique au département MMI de Montbéliard</p>
-            <ul>
-                <li><a href="https://www.facebook.com/profile.php?id=100009484964851">Facebook</a></li>
-                <li><a href="https://www.instagram.com/ikytokran/">Instagram</a></li>
-                <li><a href="https://twitter.com/mmimontbeliard?lang=fr">Twitter</a></li>
-                <li><a href="http://mmimontbeliard.com/">DUT MMI</a></li>
-            </ul>
-        </address>
-    </footer>
+<footer>
+    <p>Charlotte Poulain C1</p>
+    <address>
+        <a href="mailto:charlotte.poulain@etu.univ-fcomte.fr">Contactez moi</a>
+        <p>Projet réalisé dans le cadre d'un exercice pédagogique au département MMI de Montbéliard</p>
+        <ul>
+            <li><a href="https://www.facebook.com/profile.php?id=100009484964851"><img src="./img/accueil/facebook.png"
+                                                                                       alt=""></a></li>
+            <li><a href="https://www.instagram.com/ikytokran/"><img src="./img/accueil/instagram.png" alt=""></a></li>
+            <li><a href="https://twitter.com/mmimontbeliard?lang=fr"><img src="./img/accueil/twitter.png" alt=""></a>
+            </li>
+            <li><a href="http://mmimontbeliard.com/"><img src="./img/accueil/logo_mmi.png" alt=""></a></li>
+        </ul>
+    </address>
+</footer>
 </body>
 </html>

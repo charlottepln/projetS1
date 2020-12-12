@@ -1,15 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>EcOnline : À propos et contact</title>
+    <link rel="stylesheet" href="./css/lib/normalize.css">
+    <link rel="stylesheet" href="./css/mescss/typography.css">
+    <link rel="stylesheet" href="./css/mescss/menu.css">
+    <link rel="stylesheet" href="css/mescss/a_propos_et_contact_mise_en_page.css">
 </head>
 <body>
 <header>
     <img src="./img/accueil/logo.svg" alt="">
-    <h1>EcOnline</h1>
+    <h1 class="titre">EcOnline</h1>
+    <div class="nav-toggle">
+        <div class="nav-toggle-bar" onclick="document.documentElement.classList.toggle('menu-open')"></div>
+    </div>
     <nav class="menu">
+        <h1 class="titre">EcOnline</h1>
         <ul>
+            <li><a href="index.html">Accueil</a></li>
             <li><a href="how_to_sell_drugs_online_fast.html">How to sell drugs online fast: en quoi ça pollue?</a></li>
             <li><a href="la_pollution_numerique.html">La pollution numérique qu'est ce que c'est?</a></li>
             <li><a href="comment_sauver_la_planete.html">Comment sauver la planète?</a></li>
@@ -19,29 +31,54 @@
     </nav>
 </header>
 
-<div>
+<div class="a_propos">
     <h2>À propos</h2>
-    <p>Ce site te permet d'en apprendre plus sur la pollution numérique et les bons gestes à adopter. Il a été réalisé dans le cadre d'un projet individuel en première année de DUT MMI à Montbéliard. </p>
+    <p>Ce site te permet d'en apprendre plus sur la pollution numérique et les bons gestes à adopter. Il a été réalisé
+        dans le cadre d'un projet individuel en première année de DUT MMI à Montbéliard. </p>
 </div>
 
-<div>
+<div class="contact">
     <h2>Contact</h2>
-    <p>Prénom</p>
-    <p>Nom</p>
-    <p>Adresse mail</p>
-    <p>Objet</p>
-    <p>Ton message</p>
+
+    <div>
+        <label for="first-name"></label>
+        <input type="text" id="first-name" placeholder="Prénom">
+    </div>
+
+    <div>
+        <label for="name"></label>
+        <input type="text" id="name" placeholder="Nom">
+    </div>
+    
+    <div>
+        <label for="email"></label>
+        <input type="text" id="email" placeholder="Adresse E-mail">
+    </div>
+
+    <div>
+        <label for="object"></label>
+        <input type="text" id="object" placeholder="Objet">
+    </div>
+
+    <div class="message">
+        <label for="message"></label>
+        <input type="text" id="message" placeholder="Ton message">
+    </div>
+
+    <div class="bouton">
+        <button type="submit">Envoyer</button>
+    </div>
 </div>
 <footer>
     <p>Charlotte Poulain C1</p>
     <address>
-        <a href="a_propos_et_contact.html">charlotte.poulain@etu.univ-fcomte.fr</a>
+        <a href="mailto:charlotte.poulain@etu.univ-fcomte.fr">Contactez moi</a>
         <p>Projet réalisé dans le cadre d'un exercice pédagogique au département MMI de Montbéliard</p>
         <ul>
-            <li><a href="https://www.facebook.com/profile.php?id=100009484964851">Facebook</a></li>
-            <li><a href="https://www.instagram.com/ikytokran/">Instagram</a></li>
-            <li><a href="https://twitter.com/mmimontbeliard?lang=fr">Twitter</a></li>
-            <li><a href="http://mmimontbeliard.com/">DUT MMI</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100009484964851"><img src="./img/accueil/facebook.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/ikytokran/"><img src="./img/accueil/instagram.png" alt=""></a></li>
+            <li><a href="https://twitter.com/mmimontbeliard?lang=fr"><img src="./img/accueil/twitter.png" alt=""></a></li>
+            <li><a href="http://mmimontbeliard.com/"><img src="./img/accueil/logo_mmi.png" alt=""></a></li>
         </ul>
     </address>
 </footer>
