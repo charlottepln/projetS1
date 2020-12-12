@@ -1,0 +1,59 @@
+body>div>h2{
+    font-family: Acme,sans-serif;
+    color: #FFC342;
+    background-color: #003C8A;
+    text-align: center;
+    line-height: 3.5rem;
+    padding: 20px 0;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 2rem;
+}
+
+.a_propos{
+    font-family: "Roboto Black",sans-serif;
+    color: #003C8A;
+    justify-content: left;
+    line-height: 1.5rem;
+}
+
+.a_propos p{
+    margin: 20px;
+}
+
+body>div.contact>div>input{
+    background: white;
+    color: #003C8A;
+    font-family: Roboto, sans-serif;
+    padding: 0 50px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    display:block;
+    width:160px;
+    line-height:30px;
+    text-align:center;
+    vertical-align:middle;
+    text-decoration:none;
+    margin : 30px auto;
+}
+
+body>div.contact>div.message>input{
+    padding-bottom: 150px;
+}
+
+body>div>div.bouton>button{
+    font-family: Acme,sans-serif;
+    font-size: 1.2rem;
+    display:block;
+    width:120px;
+    line-height:30px;
+    text-align:center;
+    vertical-align:middle;
+    color: #003C8A;
+    text-decoration:none;
+    background-color: #FFC342;
+    border-radius: 20px;
+    margin-left: 190px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

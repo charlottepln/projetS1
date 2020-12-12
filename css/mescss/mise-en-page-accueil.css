@@ -1,0 +1,62 @@
+/*Page d'accueil*/
+/*header*/
+
+body{
+    background-color: #7FB2FF;
+}
+
+header{
+    background-color: #003C8A;
+}
+
+/*Intro*/
+body>header>h1{
+    margin: 0;
+    padding: 30px;
+}
+
+body>header>img{
+    float: left;
+    padding: 25px 10px;
+}
+/*Intro*/
+body>div>figure:first-of-type>img {
+    width: 280px;
+    height: 400.375px;
+}
+
+body>div>figure>img,
+body>main>div>figure>img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body>div>figure,
+body>main>div>figure{
+    margin : 0;
+}
+
+
+body>main>div>figure>img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 10px solid #003C8A;
+    margin-top: 10px;
+}
+
+body.accueil>main>div{
+    background-color: #3074E3;
+    margin: 20px;
+    border: 5px solid white;
+}
+
+
+
+
+
+
+
+
+
