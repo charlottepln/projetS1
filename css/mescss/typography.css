@@ -1,0 +1,125 @@
+.titre{
+    font-family: Pacifico, cursive ;
+    color: #FFC342;
+}
+
+.menu{
+    font-family: Acme, sans-serif;
+    color: #FFC342;
+}
+
+.intro p,
+h3 {
+    font-family: Acme, sans-serif;
+    color: #FFC342;
+    background-color: #003C8A;
+    text-align: center;
+    padding: 15px;
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+
+.intro p:first-of-type{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+h3{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+figcaption {
+    color: #003C8A;
+    font-family: Roboto, "Roboto Thin", sans-serif;
+    font-style: italic;
+    text-align: center;
+    padding-top: 15px;
+}
+
+body>main>div>p{
+    font-family: Roboto, "Roboto Light",sans-serif;
+    color: white;
+    text-align: center;
+    line-height: 2rem;
+    padding: 0 10px;
+}
+
+/*footer*/
+
+footer {
+    background-color: #003C8A;
+    margin-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+body>footer>p{
+    font-family: Acme,sans-serif;
+    color: #FFC342;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 0;
+    margin: 0;
+}
+
+body>footer>address>p{
+    font-family: Roboto,sans-serif;
+    color: #FFC342;
+    text-align: center;
+}
+
+body>footer>address>a:first-of-type{
+    display: block;
+    width: 170px;
+    line-height: 30px;
+    font-family: Roboto,sans-serif;
+    color: #003C8A;
+    background-color: #FFC342;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    vertical-align: center;
+    text-decoration: none;
+}
+
+.bouton a {
+    font-family: Acme,sans-serif;
+    font-size: 1.2rem;
+    display:block;
+    width:120px;
+    line-height:30px;
+    text-align:center;
+    vertical-align:middle;
+    color: #003C8A;
+    text-decoration:none;
+    background-color: #FFC342;
+    border-radius: 20px;
+    margin-left: 190px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+body>footer>address>ul{
+    list-style-type: none;
+    margin-bottom: 0;
+    padding: 0;
+    margin-left: 102px;
+}
+
+body>footer>address>ul>li {
+    display: table-cell;
+}
+
+body>footer>address>ul>li>a{
+    color: black;
+    padding-left: 10px;
+}
+
+body>footer>address>ul>li>a>img{
+    width: 30px;
+    height: auto;
+}
+
+
